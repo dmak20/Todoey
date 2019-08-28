@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "ecf2687aaf7cd0e24811ccf75db63af9"
-build_time: [1566956643, 65301000]
+build_time: [1566958007, 589931000]
 inputs:
-  "/Users/dmakfinsky/Projects/udemyios/Todoey/Todoey/TodoListViewController.swift": [1566956640, 667248739]
-  "/Users/dmakfinsky/Projects/udemyios/Todoey/Todoey/AppDelegate.swift": [1566851117, 337570142]
+  "/Users/dmakfinsky/Projects/udemyios/Todoey/Todoey/TodoListViewController.swift": [1566958005, 332543201]
+  "/Users/dmakfinsky/Projects/udemyios/Todoey/Todoey/AppDelegate.swift": [1566957670, 141029256]
