@@ -13,8 +13,10 @@ depends-top-level:
 - !private "=="
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
+- "CastingPrecedence"
 - "IndexPath"
 - "Int"
+- !private "String"
 - "StringLiteralType"
 - "TodoListViewController"
 - !private "UIAlertAction"
@@ -53,6 +55,7 @@ depends-member:
 - !private ["s7CVarArgP", "addAction"]
 - !private ["s7CVarArgP", "addTextField"]
 - !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "array"]
 - !private ["s7CVarArgP", "cellForRow"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "defaults"]
@@ -87,6 +90,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "addAction"]
 - !private ["s28CustomDebugStringConvertibleP", "addTextField"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "array"]
 - !private ["s28CustomDebugStringConvertibleP", "cellForRow"]
 - !private ["s28CustomDebugStringConvertibleP", "checkmark"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
@@ -121,6 +125,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "addAction"]
 - !private ["s23CustomStringConvertibleP", "addTextField"]
 - !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "array"]
 - !private ["s23CustomStringConvertibleP", "cellForRow"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "defaults"]
@@ -164,6 +169,7 @@ depends-member:
 - !private ["SQ", "addTextField"]
 - !private ["SQ", "alert"]
 - !private ["SQ", "append"]
+- !private ["SQ", "array"]
 - !private ["SQ", "cellForRow"]
 - !private ["SQ", "checkmark"]
 - !private ["SQ", "count"]
@@ -201,6 +207,7 @@ depends-member:
 - !private ["SH", "addTextField"]
 - !private ["SH", "alert"]
 - !private ["SH", "append"]
+- !private ["SH", "array"]
 - !private ["SH", "cellForRow"]
 - !private ["SH", "checkmark"]
 - !private ["SH", "count"]
@@ -267,6 +274,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "UIAlertAction"]
 - !private ["So8NSObjectC", "UIAlertController"]
 - ["So8NSObjectC", "UIBarButtonItem"]
@@ -278,6 +286,7 @@ depends-member:
 - !private ["So8NSObjectC", "addAction"]
 - ["So8NSObjectC", "addButtonProessed"]
 - !private ["So8NSObjectC", "addTextField"]
+- !private ["So8NSObjectC", "array"]
 - !private ["So8NSObjectC", "cellForRow"]
 - ["So8NSObjectC", "defaults"]
 - !private ["So8NSObjectC", "dequeueReusableCell"]
@@ -301,6 +310,7 @@ depends-member:
 - !private ["So8NSObjectP", "accessoryType"]
 - !private ["So8NSObjectP", "addAction"]
 - !private ["So8NSObjectP", "addTextField"]
+- !private ["So8NSObjectP", "array"]
 - !private ["So8NSObjectP", "cellForRow"]
 - !private ["So8NSObjectP", "defaults"]
 - !private ["So8NSObjectP", "dequeueReusableCell"]
@@ -338,6 +348,7 @@ depends-member:
 - !private ["So18UIAlertActionStyleV", "default"]
 - ["6Todoey22TodoListViewControllerC", "IndexPath"]
 - ["6Todoey22TodoListViewControllerC", "Int"]
+- !private ["6Todoey22TodoListViewControllerC", "String"]
 - !private ["6Todoey22TodoListViewControllerC", "UIAlertAction"]
 - !private ["6Todoey22TodoListViewControllerC", "UIAlertController"]
 - ["6Todoey22TodoListViewControllerC", "UIBarButtonItem"]
@@ -509,6 +520,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
+- !private ["So11UIResponderC", "String"]
 - !private ["So11UIResponderC", "UIAlertAction"]
 - !private ["So11UIResponderC", "UIAlertController"]
 - ["So11UIResponderC", "UIBarButtonItem"]
@@ -597,6 +609,7 @@ depends-member:
 - !private ["So15UITableViewCellC", "textLabel"]
 - ["So21UITableViewControllerC", "IndexPath"]
 - ["So21UITableViewControllerC", "Int"]
+- !private ["So21UITableViewControllerC", "String"]
 - !private ["So21UITableViewControllerC", "UIAlertAction"]
 - !private ["So21UITableViewControllerC", "UIAlertController"]
 - ["So21UITableViewControllerC", "UIBarButtonItem"]
@@ -705,6 +718,7 @@ depends-member:
 - !private ["So6UIViewC", "textLabel"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
+- !private ["So16UIViewControllerC", "String"]
 - !private ["So16UIViewControllerC", "UIAlertAction"]
 - !private ["So16UIViewControllerC", "UIAlertController"]
 - ["So16UIViewControllerC", "UIBarButtonItem"]
@@ -721,6 +735,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "present"]
 - ["So16UIViewControllerC", "tableView"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["So14NSUserDefaultsC", "array"]
 - !private ["So14NSUserDefaultsC", "set"]
 - ["So14NSUserDefaultsC", "standard"]
 - !private ["s14_ArrayProtocolP", "append"]
@@ -743,6 +758,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "accessoryType"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addTextField"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "array"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cellForRow"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "defaults"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
