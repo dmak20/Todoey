@@ -166,6 +166,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreData;
 @import Foundation;
 @import UIKit;
 #endif
@@ -192,19 +193,74 @@ SWIFT_CLASS("_TtC6Todoey11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
-- (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
-- (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
-- (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
-- (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSEntityDescription;
+@class NSManagedObjectContext;
+
+SWIFT_CLASS("_TtC6Todoey8Category")
+@interface Category : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class Item;
+@class NSSet;
+
+@interface Category (SWIFT_EXTENSION(Todoey))
+- (void)addItemsObject:(Item * _Nonnull)value;
+- (void)removeItemsObject:(Item * _Nonnull)value;
+- (void)addItems:(NSSet * _Nonnull)values;
+- (void)removeItems:(NSSet * _Nonnull)values;
+@end
+
+
+@interface Category (SWIFT_EXTENSION(Todoey))
+@property (nonatomic, copy) NSString * _Nullable name;
+@property (nonatomic, strong) NSSet * _Nullable items;
 @end
 
 @class UITableView;
 @class UITableViewCell;
 @class UIBarButtonItem;
+@class UIStoryboardSegue;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC6Todoey22CategoryViewController")
+@interface CategoryViewController : UITableViewController
+- (void)viewDidLoad;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (IBAction)AddButtonPressed:(UIBarButtonItem * _Nonnull)sender;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UISearchBar;
+
+@interface CategoryViewController (SWIFT_EXTENSION(Todoey)) <UISearchBarDelegate>
+- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
+- (void)searchBar:(UISearchBar * _Nonnull)searchBar textDidChange:(NSString * _Nonnull)searchText;
+@end
+
+
+SWIFT_CLASS("_TtC6Todoey4Item")
+@interface Item : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface Item (SWIFT_EXTENSION(Todoey))
+@property (nonatomic) BOOL done;
+@property (nonatomic, copy) NSString * _Nullable name;
+@property (nonatomic, strong) Category * _Nullable parentCategory;
+@end
+
 
 SWIFT_CLASS("_TtC6Todoey22TodoListViewController")
 @interface TodoListViewController : UITableViewController
@@ -216,6 +272,12 @@ SWIFT_CLASS("_TtC6Todoey22TodoListViewController")
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface TodoListViewController (SWIFT_EXTENSION(Todoey)) <UISearchBarDelegate>
+- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
+- (void)searchBar:(UISearchBar * _Nonnull)searchBar textDidChange:(NSString * _Nonnull)searchText;
 @end
 
 #if __has_attribute(external_source_symbol)
