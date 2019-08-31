@@ -18,16 +18,19 @@ depends-top-level:
 - "IntegerLiteralType"
 - "NSError"
 - "NSPersistentContainer"
+- !private "Realm"
 - "StringLiteralType"
 - "UIApplication"
 - "UIApplicationDelegate"
 - "UIResponder"
 - "UIWindow"
 - "fatalError"
+- !private "print"
 depends-member:
 - ["6Todoey11AppDelegateC", "Bool"]
 - ["6Todoey11AppDelegateC", "NSError"]
 - ["6Todoey11AppDelegateC", "NSPersistentContainer"]
+- !private ["6Todoey11AppDelegateC", "Realm"]
 - ["6Todoey11AppDelegateC", "UIApplication"]
 - ["6Todoey11AppDelegateC", "UIWindow"]
 - ["6Todoey11AppDelegateC", "application"]
@@ -47,10 +50,12 @@ depends-member:
 - ["6Todoey11AppDelegateC", "init"]
 - ["6Todoey11AppDelegateC", "persistentContainer"]
 - !private ["6Todoey11AppDelegateC", "persistentContainer.storage"]
+- !private ["6Todoey11AppDelegateC", "print"]
 - ["6Todoey11AppDelegateC", "saveContext"]
 - ["6Todoey11AppDelegateC", "window"]
 - ["s7CVarArgP", "LaunchOptionsKey"]
 - ["s7CVarArgP", "NSPersistentContainer"]
+- !private ["s7CVarArgP", "Realm"]
 - ["s7CVarArgP", ""]
 - ["s7CVarArgP", "application"]
 - ["s7CVarArgP", "applicationDidBecomeActive"]
@@ -69,13 +74,17 @@ depends-member:
 - ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "loadPersistentStores"]
 - !private ["s7CVarArgP", "persistentContainer"]
+- !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "save"]
 - !private ["s7CVarArgP", "saveContext"]
 - ["s7CVarArgP", "userInfo"]
 - !private ["s7CVarArgP", "viewContext"]
 - ["s7CVarArgP", "window"]
+- !private ["10RealmSwift0A0C13ConfigurationV", "defaultConfiguration"]
+- !private ["10RealmSwift0A0C13ConfigurationV", "fileURL"]
 - ["s28CustomDebugStringConvertibleP", "LaunchOptionsKey"]
 - ["s28CustomDebugStringConvertibleP", "NSPersistentContainer"]
+- !private ["s28CustomDebugStringConvertibleP", "Realm"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "application"]
 - ["s28CustomDebugStringConvertibleP", "applicationDidBecomeActive"]
@@ -94,6 +103,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "loadPersistentStores"]
 - !private ["s28CustomDebugStringConvertibleP", "persistentContainer"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "save"]
 - !private ["s28CustomDebugStringConvertibleP", "saveContext"]
 - ["s28CustomDebugStringConvertibleP", "userInfo"]
@@ -101,6 +111,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "window"]
 - ["s23CustomStringConvertibleP", "LaunchOptionsKey"]
 - ["s23CustomStringConvertibleP", "NSPersistentContainer"]
+- !private ["s23CustomStringConvertibleP", "Realm"]
 - ["s23CustomStringConvertibleP", ""]
 - ["s23CustomStringConvertibleP", "appendInterpolation"]
 - ["s23CustomStringConvertibleP", "appendLiteral"]
@@ -116,11 +127,14 @@ depends-member:
 - ["s23CustomStringConvertibleP", "applicationWillEnterForeground"]
 - ["s23CustomStringConvertibleP", "applicationWillResignActive"]
 - ["s23CustomStringConvertibleP", "applicationWillTerminate"]
+- !private ["s23CustomStringConvertibleP", "defaultConfiguration"]
 - ["s23CustomStringConvertibleP", "fatalError"]
+- !private ["s23CustomStringConvertibleP", "fileURL"]
 - !private ["s23CustomStringConvertibleP", "hasChanges"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "loadPersistentStores"]
 - !private ["s23CustomStringConvertibleP", "persistentContainer"]
+- !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "save"]
 - !private ["s23CustomStringConvertibleP", "saveContext"]
 - ["s23CustomStringConvertibleP", "userInfo"]
@@ -128,8 +142,10 @@ depends-member:
 - ["s23CustomStringConvertibleP", "window"]
 - ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SQ", "Configuration"]
 - ["SQ", "LaunchOptionsKey"]
 - ["SQ", "NSPersistentContainer"]
+- !private ["SQ", "Realm"]
 - ["SQ", ""]
 - ["SQ", "application"]
 - ["SQ", "applicationDidBecomeActive"]
@@ -148,6 +164,7 @@ depends-member:
 - ["SQ", "init"]
 - ["SQ", "loadPersistentStores"]
 - !private ["SQ", "persistentContainer"]
+- !private ["SQ", "print"]
 - !private ["SQ", "save"]
 - !private ["SQ", "saveContext"]
 - ["SQ", "userInfo"]
@@ -156,6 +173,7 @@ depends-member:
 - ["s5ErrorP", "userInfo"]
 - ["SH", "LaunchOptionsKey"]
 - ["SH", "NSPersistentContainer"]
+- !private ["SH", "Realm"]
 - ["SH", ""]
 - ["SH", "application"]
 - ["SH", "applicationDidBecomeActive"]
@@ -174,6 +192,7 @@ depends-member:
 - ["SH", "init"]
 - ["SH", "loadPersistentStores"]
 - !private ["SH", "persistentContainer"]
+- !private ["SH", "print"]
 - !private ["SH", "save"]
 - !private ["SH", "saveContext"]
 - ["SH", "userInfo"]
@@ -192,6 +211,7 @@ depends-member:
 - ["So8NSObjectC", "LaunchOptionsKey"]
 - ["So8NSObjectC", "NSError"]
 - ["So8NSObjectC", "NSPersistentContainer"]
+- !private ["So8NSObjectC", "Realm"]
 - ["So8NSObjectC", "UIApplication"]
 - ["So8NSObjectC", "UIWindow"]
 - ["So8NSObjectC", "application"]
@@ -212,6 +232,7 @@ depends-member:
 - ["So8NSObjectC", "loadPersistentStores"]
 - ["So8NSObjectC", "persistentContainer"]
 - ["So8NSObjectC", "persistentContainer.storage"]
+- !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "save"]
 - ["So8NSObjectC", "saveContext"]
 - ["So8NSObjectC", "userInfo"]
@@ -219,6 +240,7 @@ depends-member:
 - ["So8NSObjectC", "window"]
 - ["So8NSObjectP", "LaunchOptionsKey"]
 - ["So8NSObjectP", "NSPersistentContainer"]
+- !private ["So8NSObjectP", "Realm"]
 - ["So8NSObjectP", ""]
 - ["So8NSObjectP", "application"]
 - ["So8NSObjectP", "applicationDidBecomeActive"]
@@ -237,6 +259,7 @@ depends-member:
 - ["So8NSObjectP", "init"]
 - ["So8NSObjectP", "loadPersistentStores"]
 - !private ["So8NSObjectP", "persistentContainer"]
+- !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "save"]
 - !private ["So8NSObjectP", "saveContext"]
 - ["So8NSObjectP", "userInfo"]
@@ -246,12 +269,15 @@ depends-member:
 - ["So21NSPersistentContainerC", "loadPersistentStores"]
 - !private ["So21NSPersistentContainerC", "viewContext"]
 - ["So14NSSecureCodingP", "userInfo"]
+- !private ["10RealmSwift0A0C", "Configuration"]
+- !private ["10RealmSwift0A0C", "init"]
 - ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - ["s27StringInterpolationProtocolP", "appendLiteral"]
 - ["s16TextOutputStreamP", "appendInterpolation"]
 - ["s16TextOutputStreamP", "appendLiteral"]
 - ["So13UIApplicationC", "LaunchOptionsKey"]
 - ["So21UIApplicationDelegateP", "NSPersistentContainer"]
+- !private ["So21UIApplicationDelegateP", "Realm"]
 - ["So21UIApplicationDelegateP", ""]
 - ["So21UIApplicationDelegateP", "application"]
 - ["So21UIApplicationDelegateP", "applicationDidBecomeActive"]
@@ -267,10 +293,12 @@ depends-member:
 - ["So21UIApplicationDelegateP", "applicationWillTerminate"]
 - ["So21UIApplicationDelegateP", "fatalError"]
 - !private ["So21UIApplicationDelegateP", "persistentContainer"]
+- !private ["So21UIApplicationDelegateP", "print"]
 - !private ["So21UIApplicationDelegateP", "saveContext"]
 - ["So21UIApplicationDelegateP", "window"]
 - ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
 - ["So30UIPasteConfigurationSupportingP", "NSPersistentContainer"]
+- !private ["So30UIPasteConfigurationSupportingP", "Realm"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So30UIPasteConfigurationSupportingP", "application"]
 - ["So30UIPasteConfigurationSupportingP", "applicationDidBecomeActive"]
@@ -287,12 +315,14 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "fatalError"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "persistentContainer"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "saveContext"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "LaunchOptionsKey"]
 - ["So11UIResponderC", "NSError"]
 - ["So11UIResponderC", "NSPersistentContainer"]
+- !private ["So11UIResponderC", "Realm"]
 - ["So11UIResponderC", "UIApplication"]
 - ["So11UIResponderC", "UIWindow"]
 - ["So11UIResponderC", ""]
@@ -312,10 +342,12 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "persistentContainer"]
 - ["So11UIResponderC", "persistentContainer.storage"]
+- !private ["So11UIResponderC", "print"]
 - ["So11UIResponderC", "saveContext"]
 - ["So11UIResponderC", "window"]
 - ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
 - ["So30UIResponderStandardEditActionsP", "NSPersistentContainer"]
+- !private ["So30UIResponderStandardEditActionsP", "Realm"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - ["So30UIResponderStandardEditActionsP", "application"]
 - ["So30UIResponderStandardEditActionsP", "applicationDidBecomeActive"]
@@ -332,10 +364,12 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "fatalError"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "persistentContainer"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "saveContext"]
 - ["So30UIResponderStandardEditActionsP", "window"]
 - ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
 - ["So23UIUserActivityRestoringP", "NSPersistentContainer"]
+- !private ["So23UIUserActivityRestoringP", "Realm"]
 - ["So23UIUserActivityRestoringP", ""]
 - ["So23UIUserActivityRestoringP", "application"]
 - ["So23UIUserActivityRestoringP", "applicationDidBecomeActive"]
@@ -352,10 +386,12 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "fatalError"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "persistentContainer"]
+- !private ["So23UIUserActivityRestoringP", "print"]
 - !private ["So23UIUserActivityRestoringP", "saveContext"]
 - ["So23UIUserActivityRestoringP", "window"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "LaunchOptionsKey"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "NSPersistentContainer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Realm"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - ["10Foundation27_KeyValueCodingAndObservingP", "application"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidBecomeActive"]
@@ -374,6 +410,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "loadPersistentStores"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "persistentContainer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "save"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "saveContext"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "userInfo"]
@@ -382,6 +419,7 @@ depends-member:
 depends-nominal:
 - "6Todoey11AppDelegateC"
 - "s7CVarArgP"
+- !private "10RealmSwift0A0C13ConfigurationV"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
 - "s26DefaultStringInterpolationV"
@@ -397,6 +435,7 @@ depends-nominal:
 - "So8NSObjectP"
 - "So21NSPersistentContainerC"
 - "So14NSSecureCodingP"
+- !private "10RealmSwift0A0C"
 - "s27StringInterpolationProtocolP"
 - "s16TextOutputStreamP"
 - "So13UIApplicationC"
@@ -408,6 +447,7 @@ depends-nominal:
 - "10Foundation27_KeyValueCodingAndObservingP"
 depends-dynamic-lookup:
 depends-external:
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
@@ -421,6 +461,54 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm+Sync.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/NSError+RLMSync.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMThreadSafeReference.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectBase_Private.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSyncConfiguration_Private.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMCollection_Private.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncUtil.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncSession.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncPermission.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncConfiguration.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncSubscription.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncManager.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncUser.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Debug-iphonesimulator/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
@@ -434,4 +522,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "da333379e04ad3d2d1c9c561e50994e0"
+interface-hash: "9e65d2d5a2ef8160ca6e19e0d13b3be2"

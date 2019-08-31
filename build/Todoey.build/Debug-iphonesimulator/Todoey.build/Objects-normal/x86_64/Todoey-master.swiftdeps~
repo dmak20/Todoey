@@ -1,12 +1,9 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
-options: "ecf2687aaf7cd0e24811ccf75db63af9"
-build_time: [1567193716, 186397000]
+options: "5fd5be1ae51b1e8aecb22555820f210b"
+build_time: [1567256869, 191894000]
 inputs:
-  "/Users/dmakfinsky/Projects/udemyios/Todoey/Todoey/Controller/CategoryViewController.swift": [1567176139, 574761857]
-  "/Users/dmakfinsky/Projects/udemyios/Todoey/Todoey/Controller/TodoListViewController.swift": [1567193638, 410485350]
-  "/Users/dmakfinsky/Projects/udemyios/Todoey/Todoey/AppDelegate.swift": [1567105467, 799683847]
-  "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Todoey.build/Debug-iphonesimulator/Todoey.build/DerivedSources/CoreDataGenerated/DataModel/Category+CoreDataClass.swift": [1567173492, 894735718]
-  "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Todoey.build/Debug-iphonesimulator/Todoey.build/DerivedSources/CoreDataGenerated/DataModel/Category+CoreDataProperties.swift": [1567173492, 895845393]
-  "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Todoey.build/Debug-iphonesimulator/Todoey.build/DerivedSources/CoreDataGenerated/DataModel/Item+CoreDataClass.swift": [1567173492, 896703200]
-  "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Todoey.build/Debug-iphonesimulator/Todoey.build/DerivedSources/CoreDataGenerated/DataModel/Item+CoreDataProperties.swift": [1567173492, 897799300]
-  "/Users/dmakfinsky/Projects/udemyios/Todoey/build/Todoey.build/Debug-iphonesimulator/Todoey.build/DerivedSources/CoreDataGenerated/DataModel/DataModel+CoreDataModel.swift": [1567173492, 889320730]
+  "/Users/dmakfinsky/Projects/udemyios/Todoey/Todoey/Models/Item.swift": [1567256475, 172906279]
+  "/Users/dmakfinsky/Projects/udemyios/Todoey/Todoey/Controller/CategoryViewController.swift": [1567253732, 636874838]
+  "/Users/dmakfinsky/Projects/udemyios/Todoey/Todoey/Controller/TodoListViewController.swift": [1567256868, 312757400]
+  "/Users/dmakfinsky/Projects/udemyios/Todoey/Todoey/AppDelegate.swift": [1567197642, 902546718]
+  "/Users/dmakfinsky/Projects/udemyios/Todoey/Todoey/Models/Category.swift": [1567198187, 344402705]
